@@ -1,38 +1,77 @@
 .App {
   text-align: center;
+  font-family: 'Inter';
+  height: 100vh;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/*---- Intro ----*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image: url("../public/pexels-photo-2748757.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+.Title {
+  font-family: 'Karla';
+  font-size: 4rem;
+  margin-top: 0;
+}
+
+.Description {
+  font-size: 2rem;
+}
+
+.Normal-btn {
+  width: 10em;
+  height: 3em;
+  background: #4D5B9E;
+  border-radius: 15px;
   color: white;
+  border: none;
+  margin-top: 2em;
+  font-size: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.Normal-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*---- Quiz ----*/
+
+.container {
+  height: 100vh;
+  padding: 0 2em;
+  background-image: url("../public/augustine-wong-li0iC0rjvvg-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+.Question {
+  font-family: 'Karla';
+  margin: 0;
+  padding: 0.7em
+}
+
+.Answer {
+  width: 12em;
+  height: 3em;
+  margin: 1em;
+  font-family: 'Inter';
+  border: 0.794239px solid #4D5B9E;
+  border-radius: 7.94239px;
+}
+
+.selected {
+  background: #eff0f7;
 }

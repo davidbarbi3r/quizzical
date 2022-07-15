@@ -118,6 +118,11 @@ p {
     font-size: 0.75rem;
   }
 
+  .Info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .container {
     background-repeat: repeat;
     background-size: cover;

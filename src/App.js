@@ -21,7 +21,7 @@ function App() {
   
   // get questions from API & format it to be usable in code (decode / add unique id for each question / group correct & incorrect answers to render)
   useEffect(function (){
-    fetch('https://opentdb.com/api.php?amount=5&type=multiple')
+    fetch('https://opentdb.com/api.php?amount=5&type=multiple&category=11&difficulty=easy')
       .then(res => res.json())
       .then(data => setQuestions(data.results.map((item) => {
         return {

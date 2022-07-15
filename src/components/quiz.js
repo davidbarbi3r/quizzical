@@ -18,11 +18,15 @@ export default function Quiz (props){
         <div>
             <div className='Title-container'>
                 <h1 className="Question">{props.question}</h1>
-                <p className='Info'>{props.category}</p>
-                <p className='Info'>{props.difficulty}</p>
+                <div className='Info-container'>
+                    <p className='Info'>{props.category}</p>
+                    <p className='Info'>{props.difficulty}</p>
+                </div>
             </div>
             <div>
-                {allAnswers}
+                <div className='Answers-container'>
+                    {allAnswers}
+                </div>
                 <hr/>
             </div>
         </div>

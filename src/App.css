@@ -24,12 +24,12 @@ p {
 
 .Title {
   font-family: 'Karla';
-  font-size: 4rem;
+  font-size: 3rem;
   margin-top: 0;
 }
 
 .Description {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .Normal-btn {
@@ -39,9 +39,8 @@ p {
   border-radius: 15px;
   color: white;
   border: none;
-  margin-top: 2em;
-  margin-right: 2em;
-  font-size: 1.5rem;
+  margin: 2em auto;
+  font-size: 1.25rem;
 }
 
 .Normal-btn:active {
@@ -51,7 +50,7 @@ p {
 /*---- Quiz ----*/
 
 .container {
-  height: 100vh;
+  height: auto;
   padding: 0 2em;
   background-image: url("../public/augustine-wong-li0iC0rjvvg-unsplash.jpg");
   background-size: cover;
@@ -77,6 +76,10 @@ p {
   margin: 0.5em;
 }
 
+.Info-container {
+  display: flex;
+}
+
 .Answer {
   width: 12em;
   height: 3em;
@@ -93,4 +96,32 @@ p {
 .Footer-container {
   display: flex;
   align-items: baseline;
+}
+
+@media (max-width: 800px) {
+  
+  .Answers-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  .Answer{
+    width: fit-content;
+  }
+
+  .Question{
+    font-size: 1.25rem;
+  }
+
+  .Info {
+    font-size: 0.75rem;
+  }
+
+  .container {
+    background-repeat: repeat;
+    background-size: cover;
+    height: auto;
+  }
+
 }
